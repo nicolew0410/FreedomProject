@@ -6,3 +6,51 @@
   font-family:vipe;
   src: url("vipereg.TTF")
 }
+.oooo{
+  background-color:#b4d0d9;
+  border-style:double;
+  border-color:#5e7a82;
+  border-width:15px;
+}
+.ree{
+  background-color:#b9b1cc;
+  border-style:double;
+  border-color:#7a7487;
+  border-width:15px;
+}
+.v{
+  height:90px;
+  width:730px;
+}
+.s{
+  border-style: double;
+  border-color:#594f5e;
+  background: linear-gradient(to top, #b1e6fc -8%, #ceafe0 123%);
+  border-width:8px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cardText {
+  margin-bottom:40px;
+}
+#thumbnail {
+  box-shadow: 0 40px 60px rgba(185, 171, 219,0.2), 0 15px 15px rgba(0, 0, 0,.2);
+}
+.ll{
+  font-family:pot;
+  font-size:40px;
+  text-align:center;
+  color:#648891;
+}
+.mm{
+  font-family:vipe;
+  font-size:30px;
+  color:#ffebfc;
+  text-align:center;
+}
+.sam{
+  background-color:#bfbfbf;
+}
