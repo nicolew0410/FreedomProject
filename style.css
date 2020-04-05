@@ -51,6 +51,36 @@
   color:#ffebfc;
   text-align:center;
 }
-.sam{
-  background-color:#bfbfbf;
+.pam{
+  background-color:#badeda;
+}
+.wire{
+  visibility:hidden;
+}
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.oi{
+  background: linear-gradient(to top, #d5b9eb 2%, #bcdbeb 107%);
+  border-style:double;
+  border-width:10px;
+  border-color:#776268;;
+  padding:10px 25px;
+  font-size:25px;
+  font-family:Copperplate;
+  border-radius:12px;
+}
+.wp:hover {
+  box-shadow: 0 12px 16px 0 rgba(165, 131, 155, 0.781),0 17px 50px 0 rgba(207, 163, 189, 0.884);
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
