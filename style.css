@@ -6,21 +6,57 @@
   font-family:vipe;
   src: url("vipereg.TTF")
 }
+@font-face{
+  font-family:alp;
+  src: url("alp.ttf")
+}
+@media screen and (max-width: 600px) {
+  img.responsive {
+    width: 450px;
+    height:55px;
+  }
+  button.responsive{
+    width: 320px;
+    height:80px;
+    font-size:16px;
+    padding:2px 7px;
+  }
+  .wire.responsive{
+    font-size:2px;
+  }
+  .p.responsive{
+    font-size:16px;
+  }
+  .ll.responsive{
+    font-size:30px;
+  }
+  .in.responsive{
+    font-size:16px;
+  }
+  .the.responsive{
+    font-size:16px;
+  }
+  .last.responsive{
+    font-size:16px;
+  }
+}
 .oooo{
   background-color:#b4d0d9;
   border-style:double;
   border-color:#5e7a82;
   border-width:15px;
+  border-radius:20px;
 }
 .ree{
   background-color:#b9b1cc;
   border-style:double;
   border-color:#7a7487;
   border-width:15px;
+  border-radius:20px;
 }
 .v{
   height:90px;
-  width:730px;
+  width:750px;
 }
 .s{
   border-style: double;
@@ -43,7 +79,17 @@
   font-family:pot;
   font-size:40px;
   text-align:center;
-  color:#648891;
+  color:#5e7a82;
+}
+.the{
+  background-color:#c5d6d3;
+  border-style:double;
+  border-color:#8ca39f;
+  border-width:15px;
+  border-radius:20px;
+  font-family:pot;
+  color:#5f7873;
+  font-size:30px;
 }
 .mm{
   font-family:vipe;
@@ -56,6 +102,7 @@
 }
 .wire{
   visibility:hidden;
+  font-size:10px;
 }
 .sticky{
   position: -webkit-sticky;
@@ -66,21 +113,61 @@
   background: linear-gradient(to top, #d5b9eb 2%, #bcdbeb 107%);
   border-style:double;
   border-width:10px;
-  border-color:#776268;;
+  border-color:#776268;
   padding:10px 25px;
   font-size:25px;
-  font-family:Copperplate;
+  font-family:alp;
   border-radius:12px;
+  cursor:pointer;
+}
+.sec{
+  background: linear-gradient(to bottom, #f7d5ab 0%, #f5b3d3 91%);
+  border-style:double;
+  border-width:10px;
+  border-color:#b88ca1;
+  padding:10px 25px;
+  font-size:25px;
+  font-family:alp;
+  border-radius:12px;
+  cursor:pointer;
+}
+.woo:hover {
+  box-shadow: 0 2px 16px 0 rgba(163, 127, 145, 0.781),0 17px 50px 0 rgba(209, 169, 189, 0.884);
 }
 .wp:hover {
   box-shadow: 0 12px 16px 0 rgba(165, 131, 155, 0.781),0 17px 50px 0 rgba(207, 163, 189, 0.884);
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .wrapper {
   display: flex;
   justify-content: center;
+}
+.no{
+  text-decoration:none;
+  text-align:center;
+}
+.centering{
+  text-align:center;
+}
+.in{
+  background-color:#abb3d6;
+  border-style:double;
+  border-color:#8c92ad;
+  border-width:15px;
+  border-radius:20px;
+  font-family:copperplate;
+  color:#565c75;
+  font-size:30px;
+}
+.last{
+  background-color:#cfc3d6;
+  border-style:double;
+  border-color:#a699ad;
+  border-width:15px;
+  border-radius:20px;
+  font-family:pot;
+  color:#6c5a75;
+  font-size:30px;
+  text-align:center;
+  padding:5px 5px;
+  word-spacing: 7px;
 }
