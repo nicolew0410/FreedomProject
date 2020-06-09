@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       body{
-        background-color:#ffd4c9;
+        background-color:#bad2e3;
       }
       .p{
         cursor:pointer;
@@ -21,50 +21,63 @@
     <br>
     <br>
     <div class="wrapper">
-      <button class="oi wp responsive"><a href="ARVR.html" class="no">~ Augmented Reality ~ </a></button>
+      <button class="oi wp responsive"><a href="vrrr.html" class="no">~  Virtual Reality ~</a></button>
+      <p class="wire responsive ">--------------</p>
+      <button class="oi wp  responsive"><a href="kay.html" class="no">~ The Future ~</a></button>
       <p class="wire responsive ">----------</p>
-      <button class="oi wp responsive"><a href="kay.html" class="no">~ The Future ~</a></button>
-      <p class="wire responsive ">----------</p>
-      <button class="oi wp responsive"><a href="bp.html" class="no">~ Arising Benefits & Problems ~</a></button>
-    </div>
-    <br>
-    <script src="script.js"></script>
-      <div class="ree">
-      <p class="responsive cardText mm" id="thumbnail"> Virtual Reality is a simulated experience that plays out hyperreality through devices.
-      </div>
-      <br>
-      <div class="oooo">
-      <p class="ll responsive">This means that what you're seeing can be similar to or completely different from the real world.<br> <br> <a href="https://www.youtube.com/watch?v=fnCmUWqKo6g" class="p">Here's a glimpse into the future: </a></p>
-    </div>
-    <br>
-    <div class="in responsive">
-      <p class="centering"> Opinions differ on what exactly constitutes a true VR experience, but generally are catagorized to include: </p>
-      <ul>
-        <li> Three-dimensional images that appear to be life-sized by the user's perspective </li>
-        <br>
-        <li> Have the ability to track a user's motions </li>
-        <br>
-        <li> Correspondingly adjusts images to reflect the change in perspective. </li>
-      </ul>
-    </div>
-    <br>
-    <div class="the centering responsive">
-      <p>Unexpectedly, VR is currently being used in disciplines such as: </p>
-      <ul style="list-style-type: none;">
-        <li>✧ Architecture Modeling ✧</li>
-        <br>
-        <li> ♚ Sports ♚</li>
-        <br>
-        <li>❈ Medical Practice ❈</li>
-      </ul></p>
-    </div>
-    <br>
-    <div class="last responsive">
-      <p>With VR, our perception turns into a virtual scenario that uses our 5 senses. Using several complex programs, the technology can become interdisciplinary whether its uses in entertainment or serious purposes. As VR becomes more affordable and vast, society can expect it to become a fundamental way in which we communicate, practice, and work. </p>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
+      <button class="oi wp  responsive"><a href="bp.html" class="no">~ Arising Benefits & Problems  ~</a></button>
+  </div>
+  <br>
+<br>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="go.jpg" style="width:100%">
+  <div class="text responsive">~ Possibilities Are Endless ~</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="my.jpg" style="width:100%">
+  <div class="text responsive">~ Imagination Runs Wild ~</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="vr.jpg" style="width:100%">
+  <div class="text responsive"> ~ The Future Is In Your Hands ~ </div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
   </body>
 </html>

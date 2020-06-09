@@ -3,72 +3,164 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <style>
 body{
   background-color:#d0c3e0;
 }
+.ki{
+  width:450px;
+  height:300px;
+  border-color:#827196;
+  border-width:18px;
+  border-style:double;
+}
+.accordion{
+  background-color:#cba9cf;
+  color:#fcd9ef;
+  letter-spacing:4px;
+  cursor: pointer;
+  padding: 18px;
+  width:550px;
+  text-align: center;
+  outline: none;
+  font-size: 35px;
+  font-family:maa;
+  transition: 0.4s;
+  border-width:10px;
+  border-color:#a78aab;
+  border-style:double;
+  z-index:1;
+}
+.active, .accordion:hover {
+  background-color: #c59fc9;
+  color:white;
+  border-color:#98789c;
+}
+.panel {
+  display: none;
+  background-color:#d0b2d4;
+  overflow:hidden;
+  padding:10px;
+  text-align:center;
+  line-height:23px;
+  border-width:10px;
+  border-color:#d0c3e0;
+  border-style:inset;
+  width:550px;
+  font-size:18px;
+  font-family:ham;
+}
+.vi{
+  background-color:#aa99bf;
+  padding:50px;
+  border-color:#827196;
+  border-width:15px;
+  border-style:dashed;
+  border-radius:20px;
+}
+.ven{
+    line-height:22px;
+    letter-spacing:1px;
+  }
+@media screen and (max-width: 1050px) {
+  .accordion.responsive{
+  width:370px;
+  font-size: 20px;
+  transition: 0.4s;
+  letter-spacing:2px;
+  }
+  .panel.responsive{
+  width:370px;
+  font-size: 14px;
+  display: none;
+  background-color:#d0b2d4;
+  overflow:hidden;
+  padding:10px;
+  text-align:center;
+  line-height:23px;
+  border-width:10px;
+  border-color:#d0c3e0;
+  border-style:inset;
+  font-family:ham;
+  }
+}
 </style>
 </head>
 <body>
+<br>
+<img src="hit.png" class="cr center responsive"/>
+<br>
+<br>
 <div class="wrapper">
       <button class="sec woo responsive"><a href="index.html" class="no">~ Home ~</a></button>
       <p class="wire responsive ">--------------</p>
-      <button class="sec woo responsive"><a href="ARVR.html" class="no">~ Augmented Reality ~ </a></button>
+      <button class="sec woo responsive"><a href="vrrr.html" class="no">~ Virtual Reality ~ </a></button>
       <p class="wire responsive ">----------</p>
       <button class="sec woo responsive"><a href="bp.html" class="no">~ Arising Benefits & Problems ~</a></button>
 </div>
 <br>
-<br>
-<div class="slideshow-container">
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="go.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+<div class="vi">
+<div class="container-sm">
+  <button class="accordion responsive ">Medical Innovations</button>
+  <div class="panel responsive">
+    <p>one</p>
+  </div>
+  <br>
+  <br>
+  <button class="accordion responsive">Gaming Technology</button>
+  <div class="panel responsive">
+    <br>
+    <p class="ven"> Black Box VR sparked a new interest in the technology community at CES 2018. Combining the concept of games with exercises, Black Box managed to release a virtual reality gym. Fitness now becomes something that not only improves one's wellbeing but also an addictive, fun, and thrilling experience.
+    </p>
+    <br>
+    <div class="tr">
+        <<iframe width="560" height="315" src="https://www.youtube.com/embed/bDf15sO5F2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p> Source : https://www.ces.tech/Exhibitors/Success-Stories/Black-Box-VR.aspx </p>
+  </div>
+  <br>
+  <br>
+  <button class="accordion responsive">Architectural Purposes</button>
+  <div class="panel responsive">
+    <br>
+    <p class="ven">
+    Architecture, the practice of designing or constructing buildings, has been changing due to technology. Things have become more efficient thanks to a new innovation with Virtual Reality. Details are finer, scaling is easier, and projects involve better collaboration. Not only does this help people in the field, but also allows real estaters to sell building easier just by a click of a button virtually. 
+    </p>
+    <img src="https://www.ffkr.com/wp-content/uploads/2019/01/3D-Studio-Jeremy-VR.jpg" class="ki"/>
+    <br>
+    <br>
+    <p>
+    Source: https://vrcollab.com/blog/how-virtual-reality-vr-improves-architecture/</p>
+  </div>
 </div>
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="my.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
 </div>
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="vr.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+<!--<iframe src="mini.html" class="hmm"></frame> -->
+<script src="script.js"></script>
+ <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
 </script>
+<div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</div>
 </body>
-</html> 
-
+</html>
+<!--https://www.youtube.com/watch?time_continue=6&v=YJg02ivYzSs -->
