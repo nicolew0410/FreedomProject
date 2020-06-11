@@ -16,12 +16,14 @@ body{
   border-style:double;
 }
 .accordion{
+  position:relative;
+  left:30%;
   background-color:#cba9cf;
   color:#fcd9ef;
   letter-spacing:4px;
   cursor: pointer;
   padding: 18px;
-  width:550px;
+  width:730px;
   text-align: center;
   outline: none;
   font-size: 35px;
@@ -38,6 +40,8 @@ body{
   border-color:#98789c;
 }
 .panel {
+  position:relative;
+  left:30%;
   display: none;
   background-color:#d0b2d4;
   overflow:hidden;
@@ -47,7 +51,7 @@ body{
   border-width:10px;
   border-color:#d0c3e0;
   border-style:inset;
-  width:550px;
+  width:730px;
   font-size:18px;
   font-family:ham;
 }
@@ -63,15 +67,19 @@ body{
     line-height:22px;
     letter-spacing:1px;
   }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1170px) {
   .accordion.responsive{
-  width:370px;
+  position:relative;
+  left:30%;
+  width:310px;
   font-size: 20px;
   transition: 0.4s;
   letter-spacing:2px;
   }
   .panel.responsive{
-  width:370px;
+  position:relative;
+  left:30%;
+  width:310px;
   font-size: 14px;
   display: none;
   background-color:#d0b2d4;
@@ -102,6 +110,12 @@ body{
 <br>
 <div class="vi">
 <div class="container-sm">
+  <iframe src="mini.html" class="hmm"></iframe>
+<br>
+<br>
+<br>
+</div>
+<div>
   <button class="accordion responsive ">Medical Innovations</button>
   <div class="panel responsive">
     <p>one</p>
@@ -121,6 +135,7 @@ body{
   </div>
   <br>
   <br>
+  <br>
   <button class="accordion responsive">Architectural Purposes</button>
   <div class="panel responsive">
     <br>
@@ -130,12 +145,14 @@ body{
     <img src="https://www.ffkr.com/wp-content/uploads/2019/01/3D-Studio-Jeremy-VR.jpg" class="ki"/>
     <br>
     <br>
+    <br>
     <p>
     Source: https://vrcollab.com/blog/how-virtual-reality-vr-improves-architecture/</p>
   </div>
+  <br>
+  <br>
 </div>
 </div>
-<!--<iframe src="mini.html" class="hmm"></frame> -->
 <script src="script.js"></script>
  <script>
 var acc = document.getElementsByClassName("accordion");
