@@ -14,30 +14,47 @@
   button{
     text-decoration:none;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     .accordion.responsive{
     position:relative;
-    left:46%;
-    width:250px;
-    font-size: 20px;
+    left:33%;
+    width:223px;
+    font-size: 19px;
     transition: 0.4s;
-    letter-spacing:2px;
     }
     .panel.responsive{
     position:relative;
-    left:46%;
-    width:250px;
-    font-size: 14px;
-    display: none;
-    background-color:#d0b2d4;
-    overflow:hidden;
-    padding:10px;
+    left:33%;
+    width:223px;
+    font-size:9px;
+    padding:1px;
     text-align:center;
-    line-height:23px;
-    border-width:10px;
+    border-width:7px;
     border-color:#d0c3e0;
     border-style:inset;
     font-family:ham;
+    }
+    .hmm.responsive{
+      width:134px;
+      height:420px;
+      position:absolute;
+      left:10px;
+      overflow:hidden;
+      border-radius:20px;
+    }
+    .ki.responsive{
+      width:185px;
+      height:134px;
+      border-color:#827196;
+      border-width:8px;
+      border-style:double;
+    }
+    .vi.responsive{
+      border-width:8px;
+    }
+    .ven.responsive{
+      line-height:0;
+      letter-spacing:0;
     }
   }
 </style>
@@ -65,13 +82,18 @@
 <div>
   <button class="accordion responsive ">Medical Innovations</button>
   <div class="panel responsive">
-    <p>one</p>
+    <p class="ven"> During COVID-19, doctors and nurses scrambled during the severe shortages internationally. Using VR, they have found ways to treat the virus. Universities have been accelerating graduates in the medical field to provide more doctors. They needed training, and VR came along to help. Simulations are run by authorities to train the incoming wave of students. Not only is this helpful in communication, but it also allows a refresh of experience to older doctors and nurses. 
+    </p>
+    <img src="si.jpg" class="ki responsive"/>
+    <br>
+    <br>
+    <p>Source: https://www.cnn.com/2020/04/21/tech/vr-training-coronavirus/index.html
+    </p>
   </div>
   <br>
   <br>
   <button class="accordion responsive">Gaming Technology</button>
   <div class="panel responsive">
-    <br>
     <p class="ven"> Black Box VR sparked a new interest in the technology community at CES 2018. Combining the concept of games with exercises, Black Box managed to release a virtual reality gym. Fitness now becomes something that not only improves one's wellbeing but also an addictive, fun, and thrilling experience.
     </p>
     <br>
@@ -82,15 +104,12 @@
   </div>
   <br>
   <br>
-  <br>
   <button class="accordion responsive">Architectural Purposes</button>
   <div class="panel responsive">
-    <br>
     <p class="ven">
     Architecture, the practice of designing or constructing buildings, has been changing due to technology. Things have become more efficient thanks to a new innovation with Virtual Reality. Details are finer, scaling is easier, and projects involve better collaboration. Not only does this help people in the field, but also allows real estaters to sell building easier just by a click of a button virtually. 
     </p>
     <img src="https://www.ffkr.com/wp-content/uploads/2019/01/3D-Studio-Jeremy-VR.jpg" class="ki responsive"/>
-    <br>
     <br>
     <br>
     <p>
@@ -100,6 +119,7 @@
   <br>
 </div>
 </div>
+
 <script src="script.js"></script>
  <script>
 var acc = document.getElementsByClassName("accordion");
