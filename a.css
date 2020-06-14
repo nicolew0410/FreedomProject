@@ -1,0 +1,76 @@
+@media screen and (max-width: 800px) {
+  .wire.responsive{
+    font-size:2px;
+  }
+  button.responsive{
+    width: 320px;
+    height:80px;
+    font-size:14px;
+    padding:2px 7px;
+    text-decoration:none;
+  }
+}
+.no{
+  text-decoration:none;
+  text-align:center;
+  color:#5f7a7a;
+}
+.sec{
+  background: linear-gradient(to bottom, #bbfcdc -2%, #9dc9c9 100%);
+  border-style:double;
+  border-width:10px;
+  border-color:#739191;
+  padding:10px 25px;
+  font-size:20px;
+  font-family:alp;
+  border-radius:12px;
+  cursor:pointer;
+  text-decoration:none;
+}
+.wow:hover {
+  box-shadow: 0 12px 16px 0 rgba(126, 158, 158, 0.781),0 17px 50px 0 rgba(126, 158, 158, 0.884);
+}
+.wire{
+  visibility:hidden;
+  font-size:10px;
+}
+@font-face{
+  font-family:pot;
+  src: url("Potra.ttf")
+}
+@font-face{
+  font-family:vipe;
+  src: url("vipereg.TTF")
+}
+@font-face{
+  font-family:ham;
+  src: url("ham.ttf")
+}
+@font-face{
+  font-family:alp;
+  src: url("alp.ttf")
+}
+@font-face{
+  font-family:maa;
+  src: url("m.ttf")
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.v{
+  height:75px;
+  width:840px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.s{
+  border-style: double;
+  border-color:#739191;
+  background: linear-gradient(to top, #bbfcdc -2%, #9dc9c9 100%);
+  border-width:12px;
+}
+
