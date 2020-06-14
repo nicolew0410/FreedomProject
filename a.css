@@ -9,11 +9,22 @@
     padding:2px 7px;
     text-decoration:none;
   }
+  .v.responsive{
+    width: 450px;
+    height:40px;
+  }
+  .s.responsive{
+    border-width:7px;
+  }
 }
 .no{
   text-decoration:none;
   text-align:center;
   color:#5f7a7a;
+}
+.v{
+  height:60px;
+  width:800px;
 }
 .sec{
   background: linear-gradient(to bottom, #bbfcdc -2%, #9dc9c9 100%);
@@ -57,10 +68,6 @@
 .wrapper {
   display: flex;
   justify-content: center;
-}
-.v{
-  height:75px;
-  width:840px;
 }
 .center {
   display: block;
